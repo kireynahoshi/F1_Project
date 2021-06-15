@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_lineup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="RACE 1"
+        android:fontFamily="sans-serif-black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_lineup"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:text="RACER 1"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_lineup"
+        android:layout_marginTop="50dp"
+        android:background="@color/purple_200"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_lineup2"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:text="RACER 2"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_lineup"
+        android:layout_marginTop="40dp"
+        android:background="@color/purple_200"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_lineup3"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:text="RACER 3"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_lineup2"
+        android:layout_marginTop="40dp"
+        android:background="@color/purple_200"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_lineup4"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:text="RACER 4"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_lineup3"
+        android:layout_marginTop="40dp"
+        android:background="@color/purple_200"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:menu="@menu/navigation_bar"
+        app:itemTextColor="@android:color/black"
+        app:itemIconSize="28dp"
+        app:itemIconTint="@android:color/black"/>
+</RelativeLayout>
